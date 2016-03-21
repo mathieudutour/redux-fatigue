@@ -1,0 +1,7 @@
+{
+  "extends": ["plugin:react/recommended", "standard", "plugin:import/warnings", "plugin:import/errors"],
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ]
+}
