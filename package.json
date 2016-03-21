@@ -1,6 +1,6 @@
 {
   "name": "@mathieudutour/react-fatigue",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "react dependencies",
   "scripts": {
     "copy_babelrc": "cp -n .babelrc ../../../ || true",
