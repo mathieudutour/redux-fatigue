@@ -1,27 +1,45 @@
 {
-  "name": "@mathieudutour/react-fatigue",
-  "version": "0.1.1",
-  "description": "react dependencies",
+  "name": "redux-fatigue",
+  "version": "0.1.8",
+  "description": "redux dependencies",
+  "main": "build/index.js",
+  "jsnext:main": "src/index.js",
   "scripts": {
-    "copy_babelrc": "cp -n .babelrc ../../../ || true",
-    "copy_eslintrc": "cp -n .eslintrc ../../../ || true",
-    "copy_travis": "cp -n .travis.yml ../../../ || true",
-    "postinstall": "npm run copy_babelrc && npm run copy_eslintrc && npm run copy_travis && ./create_gitignore.sh || true"
+    "prepublish": "make clean build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mathieudutour/react-fatigue.git"
+    "url": "https://github.com/mathieudutour/redux-fatigue.git"
   },
-  "homepage": "https://github.com/mathieudutour/react-fatigue",
+  "homepage": "https://github.com/mathieudutour/redux-fatigue",
   "keywords": [],
   "author": "Mathieu Dutour <mathieu@dutour.me>",
   "license": "MIT",
   "dependencies": {
-    "@mathieudutour/js-fatigue": "^1.0.0",
-    "babel-preset-react": "^6.5.0",
-    "ecstatic": "^1.4.0",
-    "eslint-plugin-react": "^4.2.3",
-    "react": "^0.14.3",
-    "react-dom": "^0.14.3"
+    "history": "^2.1.2",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.7.0",
+    "react-router-redux": "^4.0.5",
+    "redux": "^3.6.0",
+    "redux-logger": "^2.6.1",
+    "redux-object-to-promise": "^0.2.1",
+    "redux-optimist": "^0.0.2",
+    "redux-optimist-promise": "^0.7.1",
+    "redux-queue-offline": "^0.4.2",
+    "redux-queue-offline-listener": "^0.1.3",
+    "redux-storage": "^4.1.1",
+    "redux-storage-decorator-debounce": "^1.1.1",
+    "redux-storage-decorator-migrate": "^1.0.2",
+    "redux-storage-engine-localstorage-map": "^1.0.0",
+    "redux-toast-feedback": "0.1.0",
+    "scroll-behavior": "^0.8.1"
+  },
+  "devDependencies": {
+    "@mathieudutour/js-fatigue": "^1.0.6"
+  },
+  "browserify": {
+    "transform": [
+      "loose-envify"
+    ]
   }
 }
