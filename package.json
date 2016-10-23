@@ -1,9 +1,13 @@
 {
   "name": "redux-fatigue",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "redux dependencies",
   "main": "build/index.js",
   "jsnext:main": "src/index.js",
+  "files": [
+    "build",
+    "src"
+  ],
   "scripts": {
     "prepublish": "make clean build"
   },
